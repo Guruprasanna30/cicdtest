@@ -1,2 +1,2 @@
-FROM guruprasanna30/webapp
-ADD ./test /var/www/html/test
+FROM httpd:2.4
+ADD ./test /usr/local/apache2/htdocs
