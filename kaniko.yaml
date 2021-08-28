@@ -6,7 +6,7 @@ spec:
   containers:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
-    args: ["--context=https://github.com/Guruprasanna30/cicdtest", "--destination=guruprasanna30/jenkins:3.0.0"]
+    args: ["--context=git@github.com:Guruprasanna30/cicdtest.git", "--destination=guruprasanna30/jenkins:3.0.0"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
